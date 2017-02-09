@@ -1,6 +1,6 @@
 package com.eurela.project;
 
-import com.eurela.project.problem_1.Solution;
+import com.eurela.project.problem_2.Solution;
 
 /**
  * Hello world!
@@ -10,6 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println(Solution.compute(1000));
+        System.out.println(Solution.compute(4_000_000));
     }
 }
