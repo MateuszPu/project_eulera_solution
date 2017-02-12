@@ -1,9 +1,9 @@
 package com.eurela.project;
 
-import com.eurela.project.problem_10.Solution;
+import com.eurela.project.problem_11.Solution;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println(Solution.compute(2_000_000));
+        System.out.println(Solution.compute());
     }
 }
