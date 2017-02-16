@@ -1,10 +1,10 @@
 package com.eurela.project;
 
 
-import com.eurela.project.problem_17.Solution;
+import com.eurela.project.problem_18.Solution;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println(Solution.compute(1, 1000));
+        System.out.println(Solution.compute());
     }
 }
