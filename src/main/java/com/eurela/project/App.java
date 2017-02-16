@@ -1,7 +1,7 @@
 package com.eurela.project;
 
 
-import com.eurela.project.problem_18.Solution;
+import com.eurela.project.problem_19.Solution;
 
 public class App {
     public static void main(String[] args) {
