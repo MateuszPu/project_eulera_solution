@@ -1,10 +1,13 @@
 package com.eurela.project;
 
 
-import com.eurela.project.problem_21.Solution;
+import com.eurela.project.problem_22.Solution;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class App {
-    public static void main(String[] args) {
-        System.out.println(Solution.compute(10000));
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        System.out.println(Solution.compute());
     }
 }
