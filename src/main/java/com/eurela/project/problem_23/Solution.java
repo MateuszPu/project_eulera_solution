@@ -8,17 +8,17 @@ import java.util.stream.IntStream;
 
 public class Solution {
 
-    private static int[] abundantNumbers = IntStream.rangeClosed(1, 28123)
-            .filter(Solution::isAbundant)
-            .toArray();
-
     public static long compute() throws IOException, URISyntaxException {
+        int[] abundantNumbers = IntStream.rangeClosed(1, 28123)
+                .filter(Solution::isAbundant)
+                .toArray();
+
         return IntStream.rangeClosed(1, 28123)
-                .filter(e -> !canBeSumFromTwoAbundant(e))
+                .filter(e -> !canBeSumFromTwoAbundant(e, abundantNumbers))
                 .sum();
     }
 
-    public static boolean canBeSumFromTwoAbundant(int number) {
+    public static boolean canBeSumFromTwoAbundant(int number, int[] abundantNumbers) {
         for (int i = 0; i < abundantNumbers.length; i++) {
             int diff = number - abundantNumbers[i];
             if(Arrays.binarySearch(abundantNumbers, diff) >=0){
