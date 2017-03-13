@@ -5,7 +5,6 @@ import java.util.stream.IntStream;
 
 public class Solution {
 
-    //to solver problem power = 5
     public static long compute() {
         return IntStream.iterate(2, a -> a + 1)
                 .limit(1_000_000)
