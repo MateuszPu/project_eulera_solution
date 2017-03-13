@@ -15,7 +15,7 @@ public class Solution {
     }
 
     public static boolean isPandigitalProduct(int productResult) {
-        return IntStream.rangeClosed(1, productResult)
+        return IntStream.rangeClosed(1, productResult / 2)
                 .filter(e -> productResult % e == 0)
                 .anyMatch(e -> isPandigital(e, productResult));
     }
