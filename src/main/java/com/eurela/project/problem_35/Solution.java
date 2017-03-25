@@ -20,7 +20,6 @@ public class Solution {
 
 	private static boolean isCircularPrime(int number) {
 		String stringNumber = String.valueOf(number);
-
 		for (int i = 1; i < stringNumber.length(); i++) {
 			if (!isPrime(Integer.valueOf(stringNumber.substring(i) + stringNumber.substring(0, i)))) {
 				return false;
