@@ -1,7 +1,7 @@
 package com.eurela.project;
 
 
-import com.eurela.project.problem_36.Solution;
+import com.eurela.project.problem_37.Solution;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
